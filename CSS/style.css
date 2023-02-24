@@ -1,14 +1,17 @@
-body {
+  /*Main components*/
+
+  body {
     font-family: 'Raleway', sans-serif;
     color: black;
     background: #FFFFFF;
-    margin: 0px;
+    margin: 0;
   }
     
   #main {
     width : 95%;
     margin: auto;
     margin-top: 50px;
+    max-width: 1400px;
   }
     
   a {
@@ -20,7 +23,7 @@ body {
   p {
     font-size: 1em;
     font-weight: 400;
-    margin: 0px;
+    margin: 0;
   }
     
   h1 {
@@ -224,7 +227,7 @@ body {
     justify-content: space-between;
   }
     
-  .hosting {
+  .hosting_search_results {
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
@@ -235,7 +238,7 @@ body {
     margin-bottom: 50px;
   }
 
-  .hosting h2 {
+  .hosting_search_results h2 {
     margin-top: 20px;
   }
     
@@ -293,7 +296,7 @@ body {
      
   /*Popular section*/
     
-  .popular {
+  .popular_search_results {
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
@@ -304,7 +307,7 @@ body {
     margin-bottom: 50px;
   }
     
-  .popular h2 {
+  .popular_search_results h2 {
     display: flex;
     justify-content: space-between;
     margin-top: 20px;
@@ -344,7 +347,7 @@ body {
   }
     
   .card_body_popular {
-    margin: 0px 10px 10px 20px;  
+    margin: 0px 10px 10px 15px;  
     position: relative;
   }
 
@@ -358,7 +361,7 @@ body {
     margin-top: 20px;
   }
     
-  .activities_Marseille {
+  .activities_search_results {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -427,19 +430,33 @@ body {
     
   /*RESPONSIVE DESIGN TABLET*/
     
-  @media screen and (min-width: 769px) and (max-width: 992px) {
+  @media screen and (min-width: 768px) and (max-width: 992px) {
     
   #main {
-    margin: 30px 15px 15px 15px;
+    margin: 30px 20px 0px 20px;
     }
-  
-  p {
-    font-size: 0.9em;
-  }  
+
+  /*Filters section*/
+
+  .filters_items {
+    gap: 20px;
+  }
   
   /*Hosting section*/
-  
-  .hosting {
+
+  #hosting_and_popular h2 {
+    margin-top: 15px;
+  }
+
+  #hosting_and_popular h3 {
+    font-size: 0.9em;
+  }  
+
+  #hosting_and_popular p {
+    font-size: 0.9em;
+  }
+
+  .hosting_search_results {
     width: 100%;
     padding: 20px;
   }
@@ -451,32 +468,21 @@ body {
   
   .card_hosting {
     width: 30%;
+    height: 200px;
   }
   
   .card_hosting img {
-    height: 100px;
+    height: 110px;
   }
       
-  .hosting h2 {
-    margin-top: 0;
-  }
-  
-  .hosting h3 {
-    margin-top: 5px;
-  }
-    
   /*Popular section*/
     
-  .popular {
+  .popular_search_results {
     width: 100%;
     padding: 20px;
     margin-bottom: 30px;
   }
-  
-  .popular h2 {
-    margin-top: 0;
-  }
-  
+
   .cards_popular {
     flex-direction: row;
     justify-content: center;
@@ -485,6 +491,7 @@ body {
       
   .card_popular {
     width : 30%;
+    height: 130px;
   }
     
   .card_popular img {
@@ -493,11 +500,11 @@ body {
      
   /*Activities section*/
   
-  .activities_Marseille h2 {
-    margin-top: 0;
+  .activities_search_results h2 {
+    margin-top: 0px;
   }
   
-  .activities_Marseille h3 {
+  .activities_search_results h3 {
     margin: 0px;
   }
       
@@ -508,12 +515,12 @@ body {
   }
       
   .card_activities {
-    width: 22%;
-    height: 260px;
+    width: 21%;
+    height: 270px;
   }
       
   .card_activities img {
-    height: 75%;
+    height: 80%;
   }
     
   /*Footer*/
@@ -525,12 +532,11 @@ body {
   .footer_list {
     margin: 20px 80px 20px 0px;
   }
-    
   }
     
   /*RESPONSIVE DESIGN MOBILE*/
     
-  @media screen and (min-width: 320px) and (max-width: 768px) {
+  @media screen and (min-width: 320px) and (max-width: 767px) {
     
   #main {
     width: 100%;
@@ -654,14 +660,14 @@ body {
     margin-top: 20px;
   }
     
-  .popular {
+  .popular_search_results {
     width: 100%;
     border-radius: 0px;
     padding: 0px;
     margin: 0px;
   }
   
-  .popular h2 {
+  .popular_search_results h2 {
     margin: 30px;
   }
   
@@ -681,14 +687,14 @@ body {
     
   /*Hosting section*/
     
-  .hosting {
+  .hosting_search_results {
     width: 100%;
     background-color: #FFFFFF;
     border-radius: 0px;
     padding: 0px;
   }
     
-  .hosting h2{
+  .hosting_search_results h2{
     margin: 30px;
   }
     
@@ -712,11 +718,11 @@ body {
     
   /*Activities section*/
     
-  .activities_Marseille {
+  .activities_search_results {
     width: 100%;
   }
   
-  .activities_Marseille h2 {
+  .activities_search_results h2 {
     margin: 30px;
   }
     
@@ -725,7 +731,7 @@ body {
     justify-content: center;
     gap: 20px;
     margin: 0px 20px 0px 20px;
-  
+
   }
     
   .card_activities {
@@ -746,7 +752,6 @@ body {
   }
     
   .footer_list {
-    margin: 0px 0px 10px 0px;
+    margin: 20px 0px 20px 0px;
   }
-  
   }                              
